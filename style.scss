@@ -1,0 +1,101 @@
+:root {
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #2a2a72;
+  color: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-form {
+  width: 100%;
+  max-width: 700px;
+}
+input {
+  width: 100%;
+  display: block;
+  background-color: #4c2885;
+  border-radius: 10px;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(154, 160, 185, 0.1);
+  &::placeholder {
+    color: #bbb;
+  }
+}
+.card {
+  max-width: 700px;
+  width: 100%;
+  background-color: #4c2885;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(154, 160, 185, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  margin: 0 1.5rem;
+}
+.avatar {
+  border-radius: 50%;
+  border: 10px solid #2a2a72;
+  height: 150px;
+  width: 150px;
+}
+.user-info {
+  color: #eee;
+  margin-left: 2rem;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    li {
+      display: flex;
+      align-items: center;
+      strong {
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+.repo {
+  color: white;
+  background-color: #212a72;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+@media (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .user-info {
+    margin-left: 0.5rem;
+  }
+}
